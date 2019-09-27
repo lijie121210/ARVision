@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C85EE606233DA13900391A80 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85EE605233DA13900391A80 /* Colors.xcassets */; };
+		C85EE608233DA61200391A80 /* AnchorNodeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85EE607233DA61200391A80 /* AnchorNodeProvider.swift */; };
+		C85EE60A233DA73B00391A80 /* AnchorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85EE609233DA73B00391A80 /* AnchorProvider.swift */; };
+		C85EE60C233DAE8400391A80 /* RecognizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85EE60B233DAE8400391A80 /* RecognizedText.swift */; };
+		C85EE60E233DE1A500391A80 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85EE60D233DE1A500391A80 /* Setting.swift */; };
 		C86DFA7B233C579E007AC41A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86DFA7A233C579E007AC41A /* AppDelegate.swift */; };
 		C86DFA7D233C579E007AC41A /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C86DFA7C233C579E007AC41A /* Scene.sks */; };
 		C86DFA7F233C579E007AC41A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86DFA7E233C579E007AC41A /* Scene.swift */; };
@@ -14,9 +19,17 @@
 		C86DFA84233C579E007AC41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86DFA82233C579E007AC41A /* Main.storyboard */; };
 		C86DFA86233C57A1007AC41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86DFA85233C57A1007AC41A /* Assets.xcassets */; };
 		C86DFA89233C57A1007AC41A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86DFA87233C57A1007AC41A /* LaunchScreen.storyboard */; };
+		C8E31E6A233C5F1C00920283 /* VisionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E31E69233C5F1C00920283 /* VisionController.swift */; };
+		C8F77289233C9644000EB5C2 /* VisionStabilityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F77288233C9644000EB5C2 /* VisionStabilityMonitor.swift */; };
+		C8F7728C233CF0D7000EB5C2 /* AnchorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7728B233CF0D7000EB5C2 /* AnchorStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C85EE605233DA13900391A80 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C85EE607233DA61200391A80 /* AnchorNodeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorNodeProvider.swift; sourceTree = "<group>"; };
+		C85EE609233DA73B00391A80 /* AnchorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorProvider.swift; sourceTree = "<group>"; };
+		C85EE60B233DAE8400391A80 /* RecognizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizedText.swift; sourceTree = "<group>"; };
+		C85EE60D233DE1A500391A80 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		C86DFA77233C579E007AC41A /* ARVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86DFA7A233C579E007AC41A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C86DFA7C233C579E007AC41A /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -26,6 +39,9 @@
 		C86DFA85233C57A1007AC41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86DFA88233C57A1007AC41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C86DFA8A233C57A1007AC41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E31E69233C5F1C00920283 /* VisionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionController.swift; sourceTree = "<group>"; };
+		C8F77288233C9644000EB5C2 /* VisionStabilityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionStabilityMonitor.swift; sourceTree = "<group>"; };
+		C8F7728B233CF0D7000EB5C2 /* AnchorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +74,32 @@
 		C86DFA79233C579E007AC41A /* ARVision */ = {
 			isa = PBXGroup;
 			children = (
-				C86DFA7A233C579E007AC41A /* AppDelegate.swift */,
 				C86DFA7C233C579E007AC41A /* Scene.sks */,
-				C86DFA7E233C579E007AC41A /* Scene.swift */,
-				C86DFA80233C579E007AC41A /* ViewController.swift */,
 				C86DFA82233C579E007AC41A /* Main.storyboard */,
 				C86DFA85233C57A1007AC41A /* Assets.xcassets */,
+				C85EE605233DA13900391A80 /* Colors.xcassets */,
 				C86DFA87233C57A1007AC41A /* LaunchScreen.storyboard */,
 				C86DFA8A233C57A1007AC41A /* Info.plist */,
+				C86DFA90233C5877007AC41A /* Source */,
 			);
 			path = ARVision;
+			sourceTree = "<group>";
+		};
+		C86DFA90233C5877007AC41A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C85EE607233DA61200391A80 /* AnchorNodeProvider.swift */,
+				C85EE60D233DE1A500391A80 /* Setting.swift */,
+				C85EE609233DA73B00391A80 /* AnchorProvider.swift */,
+				C8F7728B233CF0D7000EB5C2 /* AnchorStore.swift */,
+				C86DFA7A233C579E007AC41A /* AppDelegate.swift */,
+				C85EE60B233DAE8400391A80 /* RecognizedText.swift */,
+				C86DFA7E233C579E007AC41A /* Scene.swift */,
+				C86DFA80233C579E007AC41A /* ViewController.swift */,
+				C8E31E69233C5F1C00920283 /* VisionController.swift */,
+				C8F77288233C9644000EB5C2 /* VisionStabilityMonitor.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85EE606233DA13900391A80 /* Colors.xcassets in Resources */,
 				C86DFA7D233C579E007AC41A /* Scene.sks in Resources */,
 				C86DFA89233C57A1007AC41A /* LaunchScreen.storyboard in Resources */,
 				C86DFA86233C57A1007AC41A /* Assets.xcassets in Resources */,
@@ -142,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E31E6A233C5F1C00920283 /* VisionController.swift in Sources */,
 				C86DFA81233C579E007AC41A /* ViewController.swift in Sources */,
+				C85EE60C233DAE8400391A80 /* RecognizedText.swift in Sources */,
 				C86DFA7F233C579E007AC41A /* Scene.swift in Sources */,
+				C8F7728C233CF0D7000EB5C2 /* AnchorStore.swift in Sources */,
 				C86DFA7B233C579E007AC41A /* AppDelegate.swift in Sources */,
+				C85EE60A233DA73B00391A80 /* AnchorProvider.swift in Sources */,
+				C85EE608233DA61200391A80 /* AnchorNodeProvider.swift in Sources */,
+				C85EE60E233DE1A500391A80 /* Setting.swift in Sources */,
+				C8F77289233C9644000EB5C2 /* VisionStabilityMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
